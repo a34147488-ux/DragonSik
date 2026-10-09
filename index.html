@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Battle Game</title>
+
+
+<link rel="stylesheet" href="style.css">
+
+
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+
+</head>
+
+
+<body>
+
+
+<div class="app">
+
+
+<div class="lightning"></div>
+
+
+<header class="top">
+
+<div class="dragon-mark"></div>
+
+<div class="balance-box">
+
+<span id="balance">
+0
+</span>
+
+</div>
+
+
+<div class="income">
+
+Доход:
+<span id="income">
+0
+</span>
+
+/ мин
+
+</div>
+
+
+</header>
+
+
+
+
+
+<main>
+
+
+
+<section class="page active" id="home">
+
+
+<div class="free-egg-box">
+
+
+<div class="egg free">
+
+</div>
+
+
+<h2>
+
+Бесплатное яйцо
+
+</h2>
+
+
+<p id="freeTimer">
+
+Доступно сейчас
+
+</p>
+
+
+<button id="getFreeEgg">
+
+ЗАБРАТЬ
+
+</button>
+
+
+</div>
+
+
+
+
+
+<div class="dragon-stage">
+
+
+<div class="dragon-circle">
+
+
+</div>
+
+
+</div>
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section class="page" id="eggs">
+
+
+<h1>
+
+ЯЙЦА
+
+</h1>
+
+
+
+<div id="eggList">
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section class="page" id="rating">
+
+
+<h1>
+
+РЕЙТИНГ
+
+</h1>
+
+
+
+<div id="ratingList">
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section class="page" id="invite">
+
+
+<h1>
+
+ПРИГЛАСИТЬ
+
+</h1>
+
+
+
+<div class="panel">
+
+
+<div id="inviteLink">
+
+Создание ссылки...
+
+</div>
+
+
+<button id="copyInvite">
+
+СКОПИРОВАТЬ
+
+</button>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section class="page" id="api">
+
+
+<h1>
+
+API
+
+</h1>
+
+
+<div class="panel">
+
+
+<button id="createApi">
+
+ПОЛУЧИТЬ КЛЮЧ
+
+</button>
+
+
+<div id="apiKey">
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section class="page" id="more">
+
+
+<h1>
+
+ЕЩЁ
+
+</h1>
+
+
+<div class="panel">
+
+
+<button>
+
+СМЕНИТЬ НИК
+
+</button>
+
+
+<button>
+
+ЦВЕТ НИКА
+
+</button>
+
+
+<button>
+
+НАСТРОЙКИ
+
+</button>
+
+
+</div>
+
+
+</section>
+
+
+
+</main>
+
+
+
+
+
+
+
+
+
+<nav class="menu">
+
+
+<button class="nav active" data-page="eggs">
+
+</button>
+
+
+<button class="nav" data-page="rating">
+
+</button>
+
+
+<button class="nav" data-page="invite">
+
+</button>
+
+
+<button class="nav" data-page="api">
+
+</button>
+
+
+<button class="nav" data-page="more">
+
+</button>
+
+
+<button class="nav" data-page="home">
+
+</button>
+
+
+</nav>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+<script src="config.js"></script>
+
+<script src="storage.js"></script>
+
+<script src="telegram.js"></script>
+
+<script src="eggs.js"></script>
+
+<script src="rating.js"></script>
+
+<script src="invite.js"></script>
+
+<script src="api.js"></script>
+
+<script src="effects.js"></script>
+
+<script src="app.js"></script>
+
+
+
+</body>
+
+</html>
